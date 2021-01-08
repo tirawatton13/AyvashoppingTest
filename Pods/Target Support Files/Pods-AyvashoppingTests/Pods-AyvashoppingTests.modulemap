@@ -1,0 +1,6 @@
+framework module Pods_AyvashoppingTests {
+  umbrella header "Pods-AyvashoppingTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

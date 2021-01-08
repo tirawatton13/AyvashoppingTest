@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Ayvashopping" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Erz-gH-l5h">
+                                <rect key="frame" x="32" y="423" width="350" height="50"/>
+                                <color key="backgroundColor" red="0.90700000000000003" green="0.65322023630000003" blue="0.1173231527" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2Rb-Ff-8Fr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Search Country">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="USB-ZT-uYi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Erz-gH-l5h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="5Fw-yb-4iW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Erz-gH-l5h" secondAttribute="trailing" constant="32" id="V2w-27-9v4"/>
+                            <constraint firstItem="Erz-gH-l5h" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jFh-ml-PnS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104" y="104"/>
+        </scene>
+        <!--Country Feed View Controller-->
+        <scene sceneID="FOr-5S-Nz7">
+            <objects>
+                <viewController storyboardIdentifier="CountryFeedViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fwA-bs-obF" customClass="CountryFeedViewController" customModule="Ayvashopping" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hNK-Uf-jeX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6b-v6-l0E">
+                                <rect key="frame" x="32" y="76" width="20.5" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="i6b-v6-l0E" secondAttribute="height" multiplier="1:1" id="oIg-9j-19q"/>
+                                </constraints>
+                                <state key="normal" image="cancel"/>
+                                <connections>
+                                    <action selector="dismissButtonTapped:" destination="fwA-bs-obF" eventType="touchUpInside" id="1vV-2Y-jMH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cy-Dh-wDC">
+                                <rect key="frame" x="68.5" y="68.5" width="313.5" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zlL-jZ-4Eh">
+                                <rect key="frame" x="0.0" y="176.5" width="414" height="719.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="jSA-RD-BXD">
+                                <rect key="frame" x="197" y="443" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="3k3-rw-QRg"/>
+                                    <constraint firstAttribute="width" constant="20" id="gYB-xT-mZk"/>
+                                </constraints>
+                            </activityIndicatorView>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search for country" translatesAutoresizingMaskIntoConstraints="NO" id="M8D-GB-1ox">
+                                <rect key="frame" x="16" y="121" width="382" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Uaj-US-303"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jSA-RD-BXD" firstAttribute="centerX" secondItem="Uaj-US-303" secondAttribute="centerX" id="1KL-eq-8k1"/>
+                            <constraint firstItem="i6b-v6-l0E" firstAttribute="leading" secondItem="Uaj-US-303" secondAttribute="leading" constant="32" id="2xv-yl-qay"/>
+                            <constraint firstAttribute="bottom" secondItem="zlL-jZ-4Eh" secondAttribute="bottom" id="L00-JI-X0k"/>
+                            <constraint firstItem="Uaj-US-303" firstAttribute="trailing" secondItem="3cy-Dh-wDC" secondAttribute="trailing" constant="32" id="MAF-e1-T4X"/>
+                            <constraint firstItem="3cy-Dh-wDC" firstAttribute="leading" secondItem="i6b-v6-l0E" secondAttribute="trailing" constant="16" id="QbE-RB-o4e"/>
+                            <constraint firstItem="i6b-v6-l0E" firstAttribute="top" secondItem="Uaj-US-303" secondAttribute="top" constant="32" id="SF3-IS-gEV"/>
+                            <constraint firstItem="jSA-RD-BXD" firstAttribute="centerY" secondItem="Uaj-US-303" secondAttribute="centerY" id="bpk-nz-4FK"/>
+                            <constraint firstItem="3cy-Dh-wDC" firstAttribute="centerY" secondItem="i6b-v6-l0E" secondAttribute="centerY" id="dw8-Ai-IGq"/>
+                            <constraint firstItem="i6b-v6-l0E" firstAttribute="width" secondItem="hNK-Uf-jeX" secondAttribute="width" multiplier="0.05" id="ebM-bg-623"/>
+                            <constraint firstItem="zlL-jZ-4Eh" firstAttribute="top" secondItem="M8D-GB-1ox" secondAttribute="bottom" id="i1f-Hy-KFJ"/>
+                            <constraint firstItem="M8D-GB-1ox" firstAttribute="top" secondItem="3cy-Dh-wDC" secondAttribute="bottom" constant="16" id="jbL-wl-E9g"/>
+                            <constraint firstItem="zlL-jZ-4Eh" firstAttribute="leading" secondItem="Uaj-US-303" secondAttribute="leading" id="mD7-vF-9Hg"/>
+                            <constraint firstItem="Uaj-US-303" firstAttribute="trailing" secondItem="zlL-jZ-4Eh" secondAttribute="trailing" id="mcN-ar-ei1"/>
+                            <constraint firstAttribute="trailing" secondItem="M8D-GB-1ox" secondAttribute="trailing" constant="16" id="q8V-28-kd1"/>
+                            <constraint firstItem="M8D-GB-1ox" firstAttribute="leading" secondItem="Uaj-US-303" secondAttribute="leading" constant="16" id="w1u-oR-1cH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="jSA-RD-BXD" id="noQ-P4-b9Q"/>
+                        <outlet property="searchBar" destination="M8D-GB-1ox" id="xt9-ix-aEf"/>
+                        <outlet property="tableView" destination="zlL-jZ-4Eh" id="OpA-Sb-0d6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9q-JW-bcy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873.91304347826099" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cancel" width="50" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

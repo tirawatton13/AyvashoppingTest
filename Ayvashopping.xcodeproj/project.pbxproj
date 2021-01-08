@@ -1,0 +1,860 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22CAA21997B8BACD793BB91E /* Pods_Ayvashopping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094706041716CE3191577D77 /* Pods_Ayvashopping.framework */; };
+		59677CF8572E4163A9C1E8B6 /* Pods_AyvashoppingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59762B2EC2B7942A6A66F799 /* Pods_AyvashoppingUITests.framework */; };
+		BABA5738AF8E57B13BC8B6AA /* Pods_AyvashoppingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B92C25B0418257D95FC59D /* Pods_AyvashoppingTests.framework */; };
+		E61F0549259F73A80009A4A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61F0548259F73A80009A4A5 /* HomeViewController.swift */; };
+		E62835EF25A3523C00CC5147 /* CountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62835EE25A3523C00CC5147 /* CountryService.swift */; };
+		E64E8ABE25A33DDD00ABBB52 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64E8ABD25A33DDD00ABBB52 /* ContentModel.swift */; };
+		E65DAE5F259F686200BE6815 /* CountryFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65DAE5E259F686200BE6815 /* CountryFeedViewController.swift */; };
+		E65DAE6C259F68D600BE6815 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65DAE6B259F68D600BE6815 /* AppCoordinator.swift */; };
+		E677DB0425A590C00083BEF3 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E677DB0325A590C00083BEF3 /* NetworkConstants.swift */; };
+		E677DB1625A591A30083BEF3 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E677DB1525A591A30083BEF3 /* APIRouter.swift */; };
+		E67F2AA3259F65980081AF76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67F2AA2259F65980081AF76 /* AppDelegate.swift */; };
+		E67F2AA5259F65980081AF76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67F2AA4259F65980081AF76 /* SceneDelegate.swift */; };
+		E67F2AAA259F65980081AF76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E67F2AA8259F65980081AF76 /* Main.storyboard */; };
+		E67F2AAC259F65980081AF76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67F2AAB259F65980081AF76 /* Assets.xcassets */; };
+		E67F2AAF259F65980081AF76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E67F2AAD259F65980081AF76 /* LaunchScreen.storyboard */; };
+		E67F2ABA259F65980081AF76 /* AyvashoppingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67F2AB9259F65980081AF76 /* AyvashoppingTests.swift */; };
+		E67F2AC5259F65990081AF76 /* AyvashoppingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67F2AC4259F65990081AF76 /* AyvashoppingUITests.swift */; };
+		E6DE03F125A3557F004F4AE0 /* FeedCountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DE03F025A3557F004F4AE0 /* FeedCountryViewModel.swift */; };
+		E6FC4C8925A827D700B0BA87 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FC4C8825A827D700B0BA87 /* APIClient.swift */; };
+		E6FC4C9A25A85AAC00B0BA87 /* CountryTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FC4C9925A85AAC00B0BA87 /* CountryTableViewAdapter.swift */; };
+		E6FC4CC225A877F300B0BA87 /* CountrySearchBarAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FC4CC125A877F300B0BA87 /* CountrySearchBarAdapter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E67F2AB6259F65980081AF76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E67F2A97259F65980081AF76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E67F2A9E259F65980081AF76;
+			remoteInfo = Ayvashopping;
+		};
+		E67F2AC1259F65990081AF76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E67F2A97259F65980081AF76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E67F2A9E259F65980081AF76;
+			remoteInfo = Ayvashopping;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07465DD9B84B00115EA3EBDB /* Pods-AyvashoppingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyvashoppingTests.release.xcconfig"; path = "Target Support Files/Pods-AyvashoppingTests/Pods-AyvashoppingTests.release.xcconfig"; sourceTree = "<group>"; };
+		094706041716CE3191577D77 /* Pods_Ayvashopping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ayvashopping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14B92C25B0418257D95FC59D /* Pods_AyvashoppingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AyvashoppingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59762B2EC2B7942A6A66F799 /* Pods_AyvashoppingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AyvashoppingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63D0B3F9BE3B1BFE10B07C1D /* Pods-Ayvashopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ayvashopping.debug.xcconfig"; path = "Target Support Files/Pods-Ayvashopping/Pods-Ayvashopping.debug.xcconfig"; sourceTree = "<group>"; };
+		8A29C6C89D3C588E6C78F1E4 /* Pods-AyvashoppingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyvashoppingUITests.debug.xcconfig"; path = "Target Support Files/Pods-AyvashoppingUITests/Pods-AyvashoppingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9962FF1CF6A73C43048EABE6 /* Pods-Ayvashopping-AyvashoppingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ayvashopping-AyvashoppingUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ayvashopping-AyvashoppingUITests/Pods-Ayvashopping-AyvashoppingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C67D52E11FFA0619DF7FB6A /* Pods-Ayvashopping-AyvashoppingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ayvashopping-AyvashoppingUITests.release.xcconfig"; path = "Target Support Files/Pods-Ayvashopping-AyvashoppingUITests/Pods-Ayvashopping-AyvashoppingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A3F82B57042DEBE6E079B038 /* Pods-Ayvashopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ayvashopping.release.xcconfig"; path = "Target Support Files/Pods-Ayvashopping/Pods-Ayvashopping.release.xcconfig"; sourceTree = "<group>"; };
+		D039A7E4A0F4B67EDEBDE1C7 /* Pods-AyvashoppingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyvashoppingTests.debug.xcconfig"; path = "Target Support Files/Pods-AyvashoppingTests/Pods-AyvashoppingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DDA19ACF3E8FEB3AFB5E206E /* Pods-AyvashoppingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyvashoppingUITests.release.xcconfig"; path = "Target Support Files/Pods-AyvashoppingUITests/Pods-AyvashoppingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E61F0548259F73A80009A4A5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E62835EE25A3523C00CC5147 /* CountryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryService.swift; sourceTree = "<group>"; };
+		E64E8ABD25A33DDD00ABBB52 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		E65DAE5E259F686200BE6815 /* CountryFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryFeedViewController.swift; sourceTree = "<group>"; };
+		E65DAE6B259F68D600BE6815 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E677DB0325A590C00083BEF3 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		E677DB1525A591A30083BEF3 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		E67F2A9F259F65980081AF76 /* Ayvashopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ayvashopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E67F2AA2259F65980081AF76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E67F2AA4259F65980081AF76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E67F2AA9259F65980081AF76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E67F2AAB259F65980081AF76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E67F2AAE259F65980081AF76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E67F2AB0259F65980081AF76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E67F2AB5259F65980081AF76 /* AyvashoppingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AyvashoppingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E67F2AB9259F65980081AF76 /* AyvashoppingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyvashoppingTests.swift; sourceTree = "<group>"; };
+		E67F2ABB259F65980081AF76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E67F2AC0259F65990081AF76 /* AyvashoppingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AyvashoppingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E67F2AC4259F65990081AF76 /* AyvashoppingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyvashoppingUITests.swift; sourceTree = "<group>"; };
+		E67F2AC6259F65990081AF76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6DE03F025A3557F004F4AE0 /* FeedCountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCountryViewModel.swift; sourceTree = "<group>"; };
+		E6FC4C8825A827D700B0BA87 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		E6FC4C9925A85AAC00B0BA87 /* CountryTableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewAdapter.swift; sourceTree = "<group>"; };
+		E6FC4CC125A877F300B0BA87 /* CountrySearchBarAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountrySearchBarAdapter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E67F2A9C259F65980081AF76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22CAA21997B8BACD793BB91E /* Pods_Ayvashopping.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E67F2AB2259F65980081AF76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BABA5738AF8E57B13BC8B6AA /* Pods_AyvashoppingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E67F2ABD259F65990081AF76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59677CF8572E4163A9C1E8B6 /* Pods_AyvashoppingUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06959CF410C233D1969A0852 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63D0B3F9BE3B1BFE10B07C1D /* Pods-Ayvashopping.debug.xcconfig */,
+				A3F82B57042DEBE6E079B038 /* Pods-Ayvashopping.release.xcconfig */,
+				9962FF1CF6A73C43048EABE6 /* Pods-Ayvashopping-AyvashoppingUITests.debug.xcconfig */,
+				9C67D52E11FFA0619DF7FB6A /* Pods-Ayvashopping-AyvashoppingUITests.release.xcconfig */,
+				D039A7E4A0F4B67EDEBDE1C7 /* Pods-AyvashoppingTests.debug.xcconfig */,
+				07465DD9B84B00115EA3EBDB /* Pods-AyvashoppingTests.release.xcconfig */,
+				8A29C6C89D3C588E6C78F1E4 /* Pods-AyvashoppingUITests.debug.xcconfig */,
+				DDA19ACF3E8FEB3AFB5E206E /* Pods-AyvashoppingUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		33BC2986E991E702041384D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				094706041716CE3191577D77 /* Pods_Ayvashopping.framework */,
+				14B92C25B0418257D95FC59D /* Pods_AyvashoppingTests.framework */,
+				59762B2EC2B7942A6A66F799 /* Pods_AyvashoppingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E61F054D259F7E460009A4A5 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E61F0551259F7E4E0009A4A5 /* ViewController */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		E61F0551259F7E4E0009A4A5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E61F0548259F73A80009A4A5 /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E61F0555259F7E580009A4A5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E62835F825A3551A00CC5147 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				E62835EE25A3523C00CC5147 /* CountryService.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		E628360225A3554400CC5147 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E64E8ABD25A33DDD00ABBB52 /* ContentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E65DAE63259F687000BE6815 /* FeedCountry */ = {
+			isa = PBXGroup;
+			children = (
+				E62835F825A3551A00CC5147 /* Repository */,
+				E65DAE67259F688400BE6815 /* ViewController */,
+				E628360225A3554400CC5147 /* Model */,
+				E6FC4CA125A863C200B0BA87 /* ViewModel */,
+				E6FC4CA225A863CD00B0BA87 /* Adapter */,
+			);
+			path = FeedCountry;
+			sourceTree = "<group>";
+		};
+		E65DAE67259F688400BE6815 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E65DAE5E259F686200BE6815 /* CountryFeedViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E677DB0225A590280083BEF3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E677DB0325A590C00083BEF3 /* NetworkConstants.swift */,
+				E677DB1525A591A30083BEF3 /* APIRouter.swift */,
+				E6FC4C8825A827D700B0BA87 /* APIClient.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		E67F2A96259F65980081AF76 = {
+			isa = PBXGroup;
+			children = (
+				E67F2AA1259F65980081AF76 /* Ayvashopping */,
+				E67F2AB8259F65980081AF76 /* AyvashoppingTests */,
+				E67F2AC3259F65990081AF76 /* AyvashoppingUITests */,
+				E67F2AA0259F65980081AF76 /* Products */,
+				06959CF410C233D1969A0852 /* Pods */,
+				33BC2986E991E702041384D4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E67F2AA0259F65980081AF76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E67F2A9F259F65980081AF76 /* Ayvashopping.app */,
+				E67F2AB5259F65980081AF76 /* AyvashoppingTests.xctest */,
+				E67F2AC0259F65990081AF76 /* AyvashoppingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E67F2AA1259F65980081AF76 /* Ayvashopping */ = {
+			isa = PBXGroup;
+			children = (
+				E67F2AA2259F65980081AF76 /* AppDelegate.swift */,
+				E67F2AA4259F65980081AF76 /* SceneDelegate.swift */,
+				E65DAE6B259F68D600BE6815 /* AppCoordinator.swift */,
+				E677DB0225A590280083BEF3 /* Service */,
+				E61F0555259F7E580009A4A5 /* Network */,
+				E61F054D259F7E460009A4A5 /* HomeViewController */,
+				E65DAE63259F687000BE6815 /* FeedCountry */,
+				E67F2AA8259F65980081AF76 /* Main.storyboard */,
+				E67F2AAB259F65980081AF76 /* Assets.xcassets */,
+				E67F2AAD259F65980081AF76 /* LaunchScreen.storyboard */,
+				E67F2AB0259F65980081AF76 /* Info.plist */,
+			);
+			path = Ayvashopping;
+			sourceTree = "<group>";
+		};
+		E67F2AB8259F65980081AF76 /* AyvashoppingTests */ = {
+			isa = PBXGroup;
+			children = (
+				E67F2AB9259F65980081AF76 /* AyvashoppingTests.swift */,
+				E67F2ABB259F65980081AF76 /* Info.plist */,
+			);
+			path = AyvashoppingTests;
+			sourceTree = "<group>";
+		};
+		E67F2AC3259F65990081AF76 /* AyvashoppingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E67F2AC4259F65990081AF76 /* AyvashoppingUITests.swift */,
+				E67F2AC6259F65990081AF76 /* Info.plist */,
+			);
+			path = AyvashoppingUITests;
+			sourceTree = "<group>";
+		};
+		E6FC4CA125A863C200B0BA87 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E6DE03F025A3557F004F4AE0 /* FeedCountryViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		E6FC4CA225A863CD00B0BA87 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				E6FC4C9925A85AAC00B0BA87 /* CountryTableViewAdapter.swift */,
+				E6FC4CC125A877F300B0BA87 /* CountrySearchBarAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E67F2A9E259F65980081AF76 /* Ayvashopping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E67F2AC9259F65990081AF76 /* Build configuration list for PBXNativeTarget "Ayvashopping" */;
+			buildPhases = (
+				F58E3632E7907D43C0EA2A4D /* [CP] Check Pods Manifest.lock */,
+				E67F2A9B259F65980081AF76 /* Sources */,
+				E67F2A9C259F65980081AF76 /* Frameworks */,
+				E67F2A9D259F65980081AF76 /* Resources */,
+				2271775C0613F5F96FDC2A41 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ayvashopping;
+			productName = Ayvashopping;
+			productReference = E67F2A9F259F65980081AF76 /* Ayvashopping.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E67F2AB4259F65980081AF76 /* AyvashoppingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E67F2ACC259F65990081AF76 /* Build configuration list for PBXNativeTarget "AyvashoppingTests" */;
+			buildPhases = (
+				863AD1C4302CFBFB7885F4E9 /* [CP] Check Pods Manifest.lock */,
+				E67F2AB1259F65980081AF76 /* Sources */,
+				E67F2AB2259F65980081AF76 /* Frameworks */,
+				E67F2AB3259F65980081AF76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E67F2AB7259F65980081AF76 /* PBXTargetDependency */,
+			);
+			name = AyvashoppingTests;
+			productName = AyvashoppingTests;
+			productReference = E67F2AB5259F65980081AF76 /* AyvashoppingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E67F2ABF259F65990081AF76 /* AyvashoppingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E67F2ACF259F65990081AF76 /* Build configuration list for PBXNativeTarget "AyvashoppingUITests" */;
+			buildPhases = (
+				962B9F15D666523B364C62A5 /* [CP] Check Pods Manifest.lock */,
+				E67F2ABC259F65990081AF76 /* Sources */,
+				E67F2ABD259F65990081AF76 /* Frameworks */,
+				E67F2ABE259F65990081AF76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E67F2AC2259F65990081AF76 /* PBXTargetDependency */,
+			);
+			name = AyvashoppingUITests;
+			productName = AyvashoppingUITests;
+			productReference = E67F2AC0259F65990081AF76 /* AyvashoppingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E67F2A97259F65980081AF76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					E67F2A9E259F65980081AF76 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					E67F2AB4259F65980081AF76 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = E67F2A9E259F65980081AF76;
+					};
+					E67F2ABF259F65990081AF76 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = E67F2A9E259F65980081AF76;
+					};
+				};
+			};
+			buildConfigurationList = E67F2A9A259F65980081AF76 /* Build configuration list for PBXProject "Ayvashopping" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E67F2A96259F65980081AF76;
+			productRefGroup = E67F2AA0259F65980081AF76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E67F2A9E259F65980081AF76 /* Ayvashopping */,
+				E67F2AB4259F65980081AF76 /* AyvashoppingTests */,
+				E67F2ABF259F65990081AF76 /* AyvashoppingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E67F2A9D259F65980081AF76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E67F2AAF259F65980081AF76 /* LaunchScreen.storyboard in Resources */,
+				E67F2AAC259F65980081AF76 /* Assets.xcassets in Resources */,
+				E67F2AAA259F65980081AF76 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E67F2AB3259F65980081AF76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E67F2ABE259F65990081AF76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2271775C0613F5F96FDC2A41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ayvashopping/Pods-Ayvashopping-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ayvashopping/Pods-Ayvashopping-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ayvashopping/Pods-Ayvashopping-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		863AD1C4302CFBFB7885F4E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AyvashoppingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		962B9F15D666523B364C62A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AyvashoppingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F58E3632E7907D43C0EA2A4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ayvashopping-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E67F2A9B259F65980081AF76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E61F0549259F73A80009A4A5 /* HomeViewController.swift in Sources */,
+				E677DB1625A591A30083BEF3 /* APIRouter.swift in Sources */,
+				E6DE03F125A3557F004F4AE0 /* FeedCountryViewModel.swift in Sources */,
+				E64E8ABE25A33DDD00ABBB52 /* ContentModel.swift in Sources */,
+				E6FC4C9A25A85AAC00B0BA87 /* CountryTableViewAdapter.swift in Sources */,
+				E65DAE6C259F68D600BE6815 /* AppCoordinator.swift in Sources */,
+				E65DAE5F259F686200BE6815 /* CountryFeedViewController.swift in Sources */,
+				E67F2AA3259F65980081AF76 /* AppDelegate.swift in Sources */,
+				E62835EF25A3523C00CC5147 /* CountryService.swift in Sources */,
+				E67F2AA5259F65980081AF76 /* SceneDelegate.swift in Sources */,
+				E677DB0425A590C00083BEF3 /* NetworkConstants.swift in Sources */,
+				E6FC4C8925A827D700B0BA87 /* APIClient.swift in Sources */,
+				E6FC4CC225A877F300B0BA87 /* CountrySearchBarAdapter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E67F2AB1259F65980081AF76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E67F2ABA259F65980081AF76 /* AyvashoppingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E67F2ABC259F65990081AF76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E67F2AC5259F65990081AF76 /* AyvashoppingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E67F2AB7259F65980081AF76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E67F2A9E259F65980081AF76 /* Ayvashopping */;
+			targetProxy = E67F2AB6259F65980081AF76 /* PBXContainerItemProxy */;
+		};
+		E67F2AC2259F65990081AF76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E67F2A9E259F65980081AF76 /* Ayvashopping */;
+			targetProxy = E67F2AC1259F65990081AF76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E67F2AA8259F65980081AF76 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E67F2AA9259F65980081AF76 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E67F2AAD259F65980081AF76 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E67F2AAE259F65980081AF76 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E67F2AC7259F65990081AF76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E67F2AC8259F65990081AF76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E67F2ACA259F65990081AF76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63D0B3F9BE3B1BFE10B07C1D /* Pods-Ayvashopping.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JFV7KG542P;
+				INFOPLIST_FILE = Ayvashopping/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tirawat.com.Ayvashopping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E67F2ACB259F65990081AF76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3F82B57042DEBE6E079B038 /* Pods-Ayvashopping.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JFV7KG542P;
+				INFOPLIST_FILE = Ayvashopping/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tirawat.com.Ayvashopping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E67F2ACD259F65990081AF76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D039A7E4A0F4B67EDEBDE1C7 /* Pods-AyvashoppingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JFV7KG542P;
+				INFOPLIST_FILE = AyvashoppingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tirawat.com.AyvashoppingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ayvashopping.app/Ayvashopping";
+			};
+			name = Debug;
+		};
+		E67F2ACE259F65990081AF76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07465DD9B84B00115EA3EBDB /* Pods-AyvashoppingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JFV7KG542P;
+				INFOPLIST_FILE = AyvashoppingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tirawat.com.AyvashoppingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ayvashopping.app/Ayvashopping";
+			};
+			name = Release;
+		};
+		E67F2AD0259F65990081AF76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A29C6C89D3C588E6C78F1E4 /* Pods-AyvashoppingUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JFV7KG542P;
+				INFOPLIST_FILE = AyvashoppingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tirawat.com.AyvashoppingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ayvashopping;
+			};
+			name = Debug;
+		};
+		E67F2AD1259F65990081AF76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDA19ACF3E8FEB3AFB5E206E /* Pods-AyvashoppingUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JFV7KG542P;
+				INFOPLIST_FILE = AyvashoppingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tirawat.com.AyvashoppingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ayvashopping;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E67F2A9A259F65980081AF76 /* Build configuration list for PBXProject "Ayvashopping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E67F2AC7259F65990081AF76 /* Debug */,
+				E67F2AC8259F65990081AF76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E67F2AC9259F65990081AF76 /* Build configuration list for PBXNativeTarget "Ayvashopping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E67F2ACA259F65990081AF76 /* Debug */,
+				E67F2ACB259F65990081AF76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E67F2ACC259F65990081AF76 /* Build configuration list for PBXNativeTarget "AyvashoppingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E67F2ACD259F65990081AF76 /* Debug */,
+				E67F2ACE259F65990081AF76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E67F2ACF259F65990081AF76 /* Build configuration list for PBXNativeTarget "AyvashoppingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E67F2AD0259F65990081AF76 /* Debug */,
+				E67F2AD1259F65990081AF76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E67F2A97259F65980081AF76 /* Project object */;
+}
