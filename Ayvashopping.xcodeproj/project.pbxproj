@@ -24,6 +24,8 @@
 		E67F2AAF259F65980081AF76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E67F2AAD259F65980081AF76 /* LaunchScreen.storyboard */; };
 		E67F2ABA259F65980081AF76 /* AyvashoppingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67F2AB9259F65980081AF76 /* AyvashoppingTests.swift */; };
 		E67F2AC5259F65990081AF76 /* AyvashoppingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67F2AC4259F65990081AF76 /* AyvashoppingUITests.swift */; };
+		E6DBBB2F25AED517004A26ED /* StoryboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DBBB2E25AED517004A26ED /* StoryboardConstants.swift */; };
+		E6DBBB3425AED578004A26ED /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DBBB3325AED578004A26ED /* UIViewController+Extensions.swift */; };
 		E6DE03F125A3557F004F4AE0 /* FeedCountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DE03F025A3557F004F4AE0 /* FeedCountryViewModel.swift */; };
 		E6FC4C8925A827D700B0BA87 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FC4C8825A827D700B0BA87 /* APIClient.swift */; };
 		E6FC4C9A25A85AAC00B0BA87 /* CountryTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FC4C9925A85AAC00B0BA87 /* CountryTableViewAdapter.swift */; };
@@ -79,6 +81,8 @@
 		E67F2AC0259F65990081AF76 /* AyvashoppingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AyvashoppingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67F2AC4259F65990081AF76 /* AyvashoppingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyvashoppingUITests.swift; sourceTree = "<group>"; };
 		E67F2AC6259F65990081AF76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6DBBB2E25AED517004A26ED /* StoryboardConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardConstants.swift; sourceTree = "<group>"; };
+		E6DBBB3325AED578004A26ED /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		E6DE03F025A3557F004F4AE0 /* FeedCountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCountryViewModel.swift; sourceTree = "<group>"; };
 		E6FC4C8825A827D700B0BA87 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		E6FC4C9925A85AAC00B0BA87 /* CountryTableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewAdapter.swift; sourceTree = "<group>"; };
@@ -154,13 +158,6 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		E61F0555259F7E580009A4A5 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		E62835F825A3551A00CC5147 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,9 +231,10 @@
 			children = (
 				E67F2AA2259F65980081AF76 /* AppDelegate.swift */,
 				E67F2AA4259F65980081AF76 /* SceneDelegate.swift */,
+				E6DBBB2E25AED517004A26ED /* StoryboardConstants.swift */,
+				E6DBBB3325AED578004A26ED /* UIViewController+Extensions.swift */,
 				E65DAE6B259F68D600BE6815 /* AppCoordinator.swift */,
 				E677DB0225A590280083BEF3 /* Service */,
-				E61F0555259F7E580009A4A5 /* Network */,
 				E61F054D259F7E460009A4A5 /* HomeViewController */,
 				E65DAE63259F687000BE6815 /* FeedCountry */,
 				E67F2AA8259F65980081AF76 /* Main.storyboard */,
@@ -508,6 +506,8 @@
 				E64E8ABE25A33DDD00ABBB52 /* ContentModel.swift in Sources */,
 				E6FC4C9A25A85AAC00B0BA87 /* CountryTableViewAdapter.swift in Sources */,
 				E65DAE6C259F68D600BE6815 /* AppCoordinator.swift in Sources */,
+				E6DBBB2F25AED517004A26ED /* StoryboardConstants.swift in Sources */,
+				E6DBBB3425AED578004A26ED /* UIViewController+Extensions.swift in Sources */,
 				E65DAE5F259F686200BE6815 /* CountryFeedViewController.swift in Sources */,
 				E67F2AA3259F65980081AF76 /* AppDelegate.swift in Sources */,
 				E62835EF25A3523C00CC5147 /* CountryService.swift in Sources */,

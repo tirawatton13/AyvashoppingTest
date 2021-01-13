@@ -11,8 +11,7 @@ class CountryFeedViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     
     static func instantiate(viewModel: FeedCountryViewModel) -> CountryFeedViewController {
-        let storyboard = UIStoryboard(name: "Main", bundle: .main)
-        let viewController = storyboard.instantiateViewController(identifier: "CountryFeedViewController") as! CountryFeedViewController
+        let viewController = UIStoryboard(name: .main, bundle: .main).instantiate(CountryFeedViewController.self)
         viewController.viewModel = viewModel
         return viewController
     }
@@ -42,22 +41,26 @@ class CountryFeedViewController: UIViewController {
             DispatchQueue.main.async {
                 guard let self = self else { return }
                 let isLoading = self.viewModel.isLoading
-                if isLoading {
-                    self.activityIndicator.startAnimating()
-                    UIView.animate(withDuration: 0.2, animations: {
-                        self.tableView.alpha = 0.0
-                    })
-                } else {
-                    self.activityIndicator.stopAnimating()
-                    UIView.animate(withDuration: 0.2, animations: {
-                        self.tableView.alpha = 1.0
-                        self.activityIndicator.alpha = 0
-                    })
-                }
+                self.setupSpinerLoader(set: isLoading)
             }
         }
 
         viewModel.fetchCountryData()
+    }
+
+    private func setupSpinerLoader(set isLoading: Bool) {
+        if isLoading {
+            self.activityIndicator.startAnimating()
+            UIView.animate(withDuration: 0.2, animations: {
+                self.tableView.alpha = 0.0
+            })
+        } else {
+            self.activityIndicator.stopAnimating()
+            UIView.animate(withDuration: 0.2, animations: {
+                self.tableView.alpha = 1.0
+                self.activityIndicator.alpha = 0
+            })
+        }
     }
 
     private func setupTableView() {
